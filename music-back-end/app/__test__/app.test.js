@@ -1,13 +1,9 @@
 import request from 'supertest';
 import app from '../app'
-import { jest } from '@jest/globals';
 
 
 describe('Server', () => {
-    afterAll(async () => {
-        await new Promise(resolve => setTimeout(() => resolve(), 500)); // avoid jest open handle error
-    });
-    
+
     // Test the /artists route (assuming GET request to /artists)
     test('GET /artists should return a list of artists', async () => {
         const response = await request(app).get('/artists');

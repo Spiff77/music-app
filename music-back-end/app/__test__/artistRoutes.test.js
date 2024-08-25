@@ -26,7 +26,6 @@ describe('Artist Routes', () => {
     });
 
 
-
     test('GET /artists should return a list of artists', async () => {
         const mockArtists = [{ id: 1, name: 'Artist 1' }];
         artistService.getAllArtists.mockResolvedValue(mockArtists);
