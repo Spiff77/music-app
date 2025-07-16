@@ -12,7 +12,6 @@ describe('Artist Routes', () => {
     let artistService;
     let artistRoutes;
 
-
     beforeEach(async () => {
         artistService = await import('../services/artistService.js');
         artistRoutes = await import('../routes/artistRoutes.js');

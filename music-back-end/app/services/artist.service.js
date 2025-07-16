@@ -32,6 +32,6 @@ const updateArtist = async (id, artistData) => {
 const deleteArtist = async (id) => {
     const [result] = await connection.query('DELETE FROM Artist WHERE id = ?', [id]);
     return result.affectedRows > 0;
-};
+}; 
 
 export {createArtist, deleteArtist, getAllArtists, getArtistById, updateArtist}
