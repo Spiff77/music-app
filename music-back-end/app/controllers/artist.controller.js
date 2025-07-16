@@ -1,5 +1,5 @@
 
-import * as artistService from '../services/artistService.js';
+import * as artistService from '../services/artist.service.js';
 
 export const getArtists = async (req, res) => {
     try {

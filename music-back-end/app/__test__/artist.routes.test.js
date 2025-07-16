@@ -2,7 +2,7 @@ import express from 'express';
 import request from 'supertest';
 import { jest } from '@jest/globals';
 
-jest.unstable_mockModule('../services/artistService.js', () => ({
+jest.unstable_mockModule('../services/artist.service.js', () => ({
     getAllArtists: jest.fn(),
     createArtist: jest.fn()
 }));
@@ -13,8 +13,8 @@ describe('Artist Routes', () => {
     let artistRoutes;
 
     beforeEach(async () => {
-        artistService = await import('../services/artistService.js');
-        artistRoutes = await import('../routes/artistRoutes.js');
+        artistService = await import('../services/artist.service.js');
+        artistRoutes = await import('../routes/artist.routes.js');
         app = express();
         app.use(express.json());
         app.use('/artists', artistRoutes.default);

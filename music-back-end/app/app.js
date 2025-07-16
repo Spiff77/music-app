@@ -1,6 +1,6 @@
 import cors from 'cors';
 import express from 'express';
-import artistRoutes from './routes/artistRoutes.js';
+import artistRoutes from './routes/artist.routes.js';
 
 const app = express();
 app.use(cors());

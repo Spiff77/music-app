@@ -1,7 +1,7 @@
-// routes/artistRoutes.js
+// routes/artist.routes.js
 
 import express from 'express';
-import * as artistController from '../controllers/artistController.js';
+import * as artistController from '../controllers/artist.controller.js';
 
 /**
  * express.Router() is a mini Express application without the views or settings.
