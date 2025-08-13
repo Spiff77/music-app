@@ -12,7 +12,7 @@ export const getArtists = async (req, res) => {
 
 export const getArtistById = async (req, res) => {
     try {
-        const artist = await artistService.getArtistById(req.params.id);
+        const artist = await artistService.getArtistById(x);
         if (artist) {
             res.json(artist);
         } else {
